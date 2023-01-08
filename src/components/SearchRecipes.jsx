@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Spinner from "./spinner";
+import Spinner from "./Spinner";
 import "../styles/SearchRecipe.css";
 import empty from "../assets/search.svg";
 import { BsBookmarkFill } from "react-icons/bs";

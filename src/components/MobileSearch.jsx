@@ -3,7 +3,7 @@ import "../styles/MobileSearch.css";
 import { RiSearchLine } from "react-icons/ri";
 import { BsBookmarkFill } from "react-icons/bs";
 import empty from "../assets/search.svg";
-import Spinner from "./spinner";
+import Spinner from "./Spinner";
 
 const MobileSearch = ({
   submitRecipe,
