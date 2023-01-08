@@ -1,0 +1,122 @@
+.singleRecMain {
+  padding: 0.5rem;
+  height: 89vh;
+  overflow-y: scroll;
+}
+
+.singleRecMain::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.singleRecMain img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.singleRecInfo {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.singleRecInfo h1 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.cookRec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cookRec p {
+  margin-right: 2rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.cookingTime {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cookingTime span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.ingredientsMain {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgba(119, 253, 143, 0.4);
+  padding: 2rem 0.5rem;
+  gap: 0.5rem;
+}
+
+.ingList {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  gap: 0.3rem;
+  color: rgb(52, 52, 52);
+  font-size: 16px;
+}
+
+.contact {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 3rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.contact span {
+  font-weight: bold;
+}
+
+.contact a {
+  margin-top: 1.4rem;
+  display: inline-block;
+  background-color: rgb(255, 158, 174);
+  color: white;
+  padding: 12px 23px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  background-color: rgb(253, 112, 135);
+}
+
+@media (max-width: 920px) {
+  .ingredientsMain {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 2rem 1rem;
+  }
+
+  .cookRec p {
+    margin-right: 0.5rem;
+  }
+
+  .cookingTime {
+    gap: 1rem;
+    font-size: 14px;
+  }
+
+  .singleRecInfo h1 {
+    font-size: 1.1rem;
+  }
+}

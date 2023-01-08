@@ -1,0 +1,65 @@
+.overLay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 12;
+}
+
+.showBookmark {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  z-index: 15;
+  transform: translate(-50%, -50%);
+}
+
+.showBookList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  max-height: 450px;
+  overflow-y: scroll;
+}
+
+.showBookList::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.bookmarkHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.showBookmark b {
+  background-color: black;
+  color: white;
+  padding: 10px 14px;
+  margin-top: 1rem;
+  font-weight: 400;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.showBookmark b:hover {
+  background-color: rgb(29, 29, 29);
+}
+
+@media (max-width: 650px) {
+  .showBookmark {
+    width: 95%;
+    padding: 2rem 1rem;
+    top: 50%;
+  }
+}

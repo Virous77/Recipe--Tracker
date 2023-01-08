@@ -1,0 +1,14 @@
+.error {
+  background-color: rgb(68, 68, 253);
+  width: fit-content;
+  position: fixed;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  font-size: 16px;
+  padding: 7px 20px;
+  border-radius: 5px;
+  z-index: 100;
+  white-space: nowrap;
+}
